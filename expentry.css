@@ -1,0 +1,178 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins&display=swap');
+
+*,::after,::before{
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Poppins','Roboto', sans-serif;
+    
+}
+/* .maincontainer{
+
+} */
+.navbarbg{
+    background-image: linear-gradient(to bottom right,rgb(255,255,255), rgb(122, 233, 237), rgb(233, 166, 240));
+}
+
+
+body{
+    font-family: 'Poppins','Roboto', sans-serif;
+    margin: 0;
+    /* background-color: rgb(41, 29, 29); */
+    background-size: cover;
+    /* min-width: 375px; */
+    background-color:rgb(217, 252, 252) ;
+}
+
+a{
+    cursor: pointer;
+    text-decoration: none;
+    font-family: 'Poppins','Roboto', sans-serif;
+}
+li{
+    list-style: none;
+    
+}
+/* sidebarlayout skeleton */
+.wrapper{
+    align-items: stretch;
+    display: flex;
+    width: 100%;
+    
+    
+}
+#sidebar{
+   margin-right: 10px;
+   padding-left: 2px;
+   padding-right: 2px;
+    /* max-width: 264px;
+    min-width: 264px; */
+    width: 264px;
+    transition: all 0.35s ease-in-out;
+    background-color:rgb(59, 58, 58);
+
+}
+/* sidebar collapsed */
+#sidebar.collapsed{
+    margin-left: -264px;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    transition: all 0.35s ease-in-out;
+
+} 
+
+
+.sidebar-logo a{
+    /* color: #e9ecef; */
+    font-size: 1.25rem;
+    font-weight: 600;
+
+}
+
+.sidebar-nav{
+ padding: 0;
+
+}
+.sidebar-header{
+    /* color: #e9ecef; */
+    font-size: .75rem;
+    padding: 1.5rem 1.5rem .375rem;
+
+}
+a.sidebar-link{
+    padding: .625rem 1.625rem;
+    position: relative;
+    color: blue;
+    display: block;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.sidebar-link[data-bs-toggle="collapse"]::after{
+    border: solid;
+    border-width: 0 0.075rem 0.075rem 0;
+    content: "";
+    display: inline-block;
+    padding: 2px;
+    position: absolute;
+    right: 1.5rem;
+    top: 1.4rem;
+    transform: rotate(-135deg);
+    transition:  all .02s ease-out;
+}
+.sidebar-link[data-bs-toggle="collapse"].collapsed::after{
+    transform: rotate(45deg);
+    transition:  all .02s ease-out;
+}
+.sidebar-bg{
+    background-image: linear-gradient(to bottom right,rgb(255,255,255), rgb(122, 233, 237), rgb(233, 166, 240));
+}
+/* .expentryarea{
+    background-color: antiquewhite;
+    border: 1px solid red;
+} */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+    margin: 0;
+}
+
+
+

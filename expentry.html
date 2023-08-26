@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/adbde3dab9.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="expentry.css">
+  <title>Insight Engineers & Consultants</title>
+</head>
+
+<body>
+  <!-- main page starts-->
+  <div class="maincontainer">
+    <!-- header -->
+    <nav class="navbar sticky-top navbar-expand-sm navbarbg"><!--navbar-light bg-light-->
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img class="brand-image" src="INSIGHT_LOGO_without_bg.png" alt=""
+            style="width: 125px;"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#headernavbartoggler"
+          aria-controls="headernavbartoggler" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="headernavbartoggler">
+          <h1 class="h1 m-auto mb-2 mb-sm-0 text-uppercase text-primary-emphasis">insight engineers & consultants</h1>
+          <form class="d-flex">
+            <button class="btn btn-outline-success" type="button">Logout</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- sidebar division starts-->
+
+    <div class="wrapper">
+      <!-- sidebar -->
+      <aside id="sidebar">
+        <div class="h-100">
+
+          <!-- search bar -->
+          <div class="my-3">
+            <input type="search" id="form1" class="form-control border-info rounded-pill bg-light" placeholder="Search"
+              aria-label="Search" />
+          </div>
+          <!-- search bar -->
+          <!-- sidebar navigation -->
+          <ul class="sidebar-nav">
+            <!-- projects -->
+            <li class="sidebar-item mb-1">
+              <a href="#" class="sidebar-link collapsed sidebar-bg border rounded-5 text-dark" data-bs-toggle="collapse"
+                data-bs-target="#projects" aria-expanded="false" aria-controls="projects">
+                <i class="fa-regular fa-file-lines pe2"></i>
+                Projects
+              </a>
+              <ul id="projects" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                <li class="sidebar-item">
+                  <a href="#" class="sidebar-link">Project 01</a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="#" class="sidebar-link">Project 02</a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="#" class="sidebar-link">Project 03</a>
+                </li>
+              </ul>
+            </li>
+            <!-- projects -->
+            <!-- data entry -->
+            <li class="sidebar-item mb-1">
+              <a href="#" class="sidebar-link collapsed sidebar-bg border rounded-5 text-dark" data-bs-toggle="collapse"
+                data-bs-target="#dataentry" aria-expanded="false" aria-controls="dataentry">
+                <i class="fa-solid fa-plus pe-2"></i>
+                Data Entry
+              </a>
+              <ul id="dataentry" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                <li class="sidebar-item">
+                  <a href="#" class="sidebar-link">Expenses</a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="#" class="sidebar-link">Labour</a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="#" class="sidebar-link">Supplier Payments</a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="#" class="sidebar-link">Receipts</a>
+                </li>
+              </ul>
+            </li>
+            <!-- data entry -->
+            <!-- Create new -->
+            <li class="sidebar-item mb-1">
+              <a href="#" class="sidebar-link collapsed sidebar-bg border rounded-5 text-dark" data-bs-toggle="collapse"
+                data-bs-target="#createnewdata" aria-expanded="false" aria-controls="createnewdata">
+                <i class="fa-solid fa-plus pe-2"></i>Create New
+              </a>
+              <ul id="createnewdata" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                <li class="sidebar-item">
+                  <a href="#" class="sidebar-link">Project</a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="#" class="sidebar-link">Supplier</a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="#" class="sidebar-link">SubContractor</a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="#" class="sidebar-link">Item</a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="#" class="sidebar-link">Rate</a>
+                </li>
+              </ul>
+            </li>
+            <!-- create new ends -->
+            <!-- Modify starts -->
+            <li class="sidebar-item mb-1">
+              <a href="#" class="sidebar-link collapsed sidebar-bg border rounded-5 text-dark" data-bs-toggle="collapse"
+                data-bs-target="#modify" aria-expanded="false" aria-controls="modify">
+                <i class="fa-solid fa-plus pe-2"></i>Modify
+              </a>
+              <ul id="modify" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                <li class="sidebar-item">
+                  <a href="#" class="sidebar-link">Project</a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="#" class="sidebar-link">Supplier</a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="#" class="sidebar-link">SubContractor</a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="#" class="sidebar-link">Item</a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="#" class="sidebar-link">Rate</a>
+                </li>
+              </ul>
+            </li>
+            <!-- Modify ends -->
+          </ul>
+        </div>
+      </aside>
+      <!-- sidebar division ends -->
+      <!-- main component -->
+      <div class="main">
+        <nav class="navbar navbar-expand px-3 border-bottom">
+          <!-- button for sidebar toggle -->
+          <button class="menu-btn btn" type="button" data-bs-theme="light">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </nav>
+        <!--maindata-->
+        <div class="container-fluid mt-3">
+          <!-- dashboard -->
+          <div class="row dashboard">
+            <div class="row">
+              <div class="col d-flex justify-content-center align-items-center">
+                <div class="row-col-2">
+                  <p class="border rounded-pill p-1 text-center bg-primary-subtle ">Project Status</p><br>                  
+                  <p class="border rounded-pill p-1 text-center bg-primary-subtle">Work days/Start / End days</p>
+                </div>
+
+              </div>
+              <div class="col  d-flex justify-content-center align-items-center">
+                <div class="row-col-2">
+                  <p class="border rounded-pill p-1 text-center bg-primary-subtle">Total Expense</p> <br>
+                  <p class="border rounded-pill p-1 text-center bg-primary-subtle">Total Payables</p>
+                </div>
+              </div>
+              <div class="col  d-flex justify-content-center align-items-center">
+                <div class="row-col-2">
+                  <p class="border rounded-pill p-1 text-center bg-primary-subtle">Total Receipts</p> <br>
+                  <p class="border rounded-pill p-1 text-center bg-primary-subtle">Total Receivables</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- dashboard -->
+          <!-- Expense entry table -->
+          <div class="row container-fluid expentryarea">
+            <!-- row 1 -->
+            <div class="row mt-3">
+              <div class="col">
+                <div class="input-group">
+                  <label class="input-group-text bg-secondary-subtle">Select Project</label>
+                  <select class="form-select" aria-label="Default select example" id="expentryprojectname">
+                    <option selected>Open this select menu</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <!-- row 2 -->
+            <div class="row mt-3">
+              <div class="col-md-3">
+                <label for="expentrydate" class="form-control bg-secondary-subtle">Date</label>
+                <input type="date" class="form-control mt-1" name=""  id="expentrydate">
+              </div>
+              <div class="col-md-3">
+                <label for="expentryitem" class="form-control bg-secondary-subtle">Item</label>
+                <select class="form-control mt-1" aria-label="Default select example" id="expentryitem">
+                  <option selected>select item</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+              <div class="col-md-3">
+                <label for="expentrysubgroup" class="form-control bg-secondary-subtle">Subgroup</label>
+                <input type="text" class="form-control mt-1" name="" id="expentrysubgroup" readonly>
+              </div>
+              <div class="col-md-3">
+                <label for="expentrygroup" class="form-control  bg-secondary-subtle">Group</label>
+                <input type="text" class="form-control mt-1" name="" id="expentrygroup" readonly>
+              </div>
+            </div>
+
+            <!-- row 3 -->
+            <div class="row mt-3">
+              <div class="col-md-3">
+                <label for="expentryworktype" class="form-control bg-secondary-subtle ">Work Type</label>
+                <select class="form-control mt-1" aria-label="Default select example" id="expentryworktype">
+                  <option selected>select item</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+              <div class="col-md-3">
+                <label for="expentryelement" class="form-control bg-secondary-subtle">Element</label>
+                <select class="form-control mt-1" aria-label="Default select example" id="expentryelement">
+                  <option selected>select item</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+              <div class="col-md-3">
+                <label for="expentrylevel" class="form-control bg-secondary-subtle">Level</label>
+                <select class="form-control mt-1" aria-label="Default select example" id="expentrylevel">
+                  <option selected>select item</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+              <div class="col-md-3">
+                <label for="expentrysupplier" class="form-control  bg-secondary-subtle">Supplier</label>
+                <select class="form-control mt-1" aria-label="Default select example" id="expentrysupplier">
+                  <option selected>select item</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- row 4 -->
+            <div class="row mt-3">
+              <div class="col-md-3">
+                <label for="expentryqty" class="form-control bg-secondary-subtle ">Qty / Units</label>
+                <input type="number" class="form-control mt-1 invalidNumericEntry" name="" id="expentryqty">
+              </div>
+              <div class="col-md-3">
+                <label for="expentryraterperunit" class="form-control bg-secondary-subtle">Rate / Unit</label>
+                <input type="number"  class="form-control mt-1 invalidNumericEntry" name="" id="expentryraterperunit">
+              </div>
+              <div class="col-md-3">
+                <label for="expentryothercharges" class="form-control bg-secondary-subtle">Other Charges</label>
+                <input type="number"  class="form-control mt-1 invalidNumericEntry" name="" id="expentryothercharges">
+              </div>
+              <div class="col-md-3">
+                <label for="expentrytotalamt" class="form-control  bg-secondary-subtle">Total Amount</label>
+                <input type="number"  class="form-control mt-1" name="" id="expentrytotalamt" readonly>
+              </div>
+            </div>
+
+            <!-- row 5 -->
+            <div class="row mt-3 align-items-end">
+              <div class="col-md-3">
+                <label for="expentrypaidby" class="form-control bg-secondary-subtle ">Paid By</label>
+                <select class="form-control mt-1 input-bg" aria-label="Default select example" id="expentrypaidby">
+                  <option selected>Select...</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+              <div class="col-md-3">
+                <label for="expentryraterpaidamount" class="form-control bg-secondary-subtle">Paid Amount</label>
+                <input type="number"  class="form-control mt-1 invalidNumericEntry" name="" id="expentryraterpaidamount">
+              </div>
+              <div class="col-md-3">
+                <label for="expentrybalance" class="form-control bg-secondary-subtle">Balance</label>
+                <input type="number" class="form-control mt-1" name="" id="expentrybalance" readonly>
+              </div>
+              <div class="col-md-3">
+                <textarea class="form-control" id="expentrynarration" rows="3" style="resize: none;"
+                  placeholder="Narration if any"></textarea>
+              </div>
+            </div>
+
+
+                    <!-- submitt,reset and cancel buttons starts -->
+                  <div class="row text-center mt-3">
+                    <div class="row justify-content-end me-0">
+                      <div class="col-sm-1">
+                        <button type="button" class="btn btn-outline-warning px-3 text-black">Reset</button>
+                      </div>
+                      <div class="col-sm-1">
+                        <button type="button" class="btn btn-outline-warning px-3 text-black">Cancel</button>
+                      </div>
+                      <div class="col-sm-1">
+                        <button type="button" class="btn btn-outline-success px-3 text-black">submit</button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- submitt,reset and cancel buttons ends -->
+
+          </div><!-- Expense entry table -->
+          
+
+        </div>
+        <!-- main data -->
+      </div><!-- main component -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div><!-- main page ends-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+    <script>
+      $('#expentrydat').datepicker({
+          uiLibrary: 'bootstrap5'
+      });
+  </script> -->
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"></script>
+    <script src="expentry.js"></script>
+</body>
+
+</html>
